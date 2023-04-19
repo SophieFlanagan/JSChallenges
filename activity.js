@@ -165,6 +165,280 @@ console.log(favSongs)
 let favHolidayDestinations = ["Venice, Italy", "Paris, France", "Barcelona, Spain"]
 console.log(favHolidayDestinations)
 
-for (let i = 0; i< favHolidayDestinations.length; i++){
+for (let i = 2; i< favHolidayDestinations.length; i++){
     console.log(favHolidayDestinations[i])
 }
+favHolidayDestinations.push("Thailand, Cambodia", "Maldives, India")
+console.log(favHolidayDestinations)
+
+// Activity 2
+let evenNumbers = []
+for (let n = 0; n < 20; n++){
+    if (n % 2 == 0) {
+        (evenNumbers.push(n))
+    }
+}
+
+let evenNumbers = []
+for (let n = 0; n < 20; n++){
+    if (n % 2 == 0) {
+        (evenNumbers.push(n))
+    }
+}
+
+
+console.log(`The even numbers between 0 and 20 are; ${evenNumbers}`)
+console.log(`The even numbers between 0 and 20 in reverse order are; ${evenNumbers.reverse()}`)
+
+// Activity 3
+
+let oddNumbers = []
+for (let n = 0; n < 30; n++){
+    if (n % 2 == 1) {
+        (oddNumbers.push(n))
+    }
+}
+
+console.log(`The odd numbers between 1 and 30 are ${oddNumbers}`)
+
+
+let currentAge = [Math.floor(Math.random()*100)]
+while (currentAge <18){
+    console.log("You're a child!")
+    currentAge = Math.floor(Math.random()*100)
+  
+}
+while (currentAge >=18){
+    console.log("You're an adult!")
+    currentAge = Math.floor(Math.random()*100)
+}
+
+
+
+// Acitivity 4
+
+// Activity 4
+let numbers = []
+while (numbers.length <6){
+randomNumber = Math.floor(Math.random()*100)
+console.log(randomNumber)
+numbers.push(randomNumber)
+}
+console.log(numbers)
+
+// Activity 5
+
+let films = ["filmA", "filmB", "filmC", "filmD"]
+for (filmNumber = 0; filmNumber < films.length; filmNumber ++){
+    if(filmNumber == 2 && films[2] == "Ghostbusters"){
+        console.log("Yay, it's Ghostbusters")
+    }
+    else if (filmNumber == 2 && films[2] != "Ghostbusters"){
+        console.log("Boo! We want Ghostbusters!")
+    }
+}
+
+
+
+// Activity 6
+
+for (i = 0; i < 6; i++){
+    randomNumber = Math.floor((Math.random()*29)+1)
+    // console.log(randomNumber)
+
+    if (randomNumber % 7 == 0){
+    console.log(`${randomNumber} is divisible by 7`)
+    }
+    else{
+    console.log(`${randomNumber} is not divisible by 7`)
+    }
+    }
+
+    // Activity 7
+
+let bobsFollowers = ["Name1", "Name2", "Name3", "Name4"]
+let hannahsFollowers = ["Name3", "Name4", "Name5", "Name6"]
+
+const findingMatch = ()=>{
+for(let i = 0; i < bobsFollowers.length; i++){
+    // console.log(bobsFollowers[i])
+    for(let j = 0; j < hannahsFollowers.length; j++){
+        // console.log(hannahsFollowers[j])
+        if(bobsFollowers[i] == hannahsFollowers[j]){
+            console.log(bobsFollowers[i], "Follows both Bob & Hannah")
+        }
+    }
+}
+}
+findingMatch()
+
+
+
+
+
+// IfElse
+// Activity 1
+
+let music = "classical"
+
+if (music == "classical"){
+    console.log("Oh, how relaxing")
+}
+else if (music == "disco"){
+    console.log("Where are my dancing shoes?")
+}
+else{
+    console.log("Turn it down")
+}
+
+// Activity 2/3
+
+let age = 8
+let country = "UK"
+
+if (age >17 && country == "UK"){
+    console.log("Yes I can serve you")
+}
+else {
+    console.log("You aren't old enough")
+}
+
+
+// Activity 4
+let day = "Wednesday"
+
+if (day == "Saturday " || day == "Sunday"){
+    console.log("Yay it's the weekend!")
+}
+else {
+    console.log("Oh no, work again!")
+}
+
+// Activity 4
+
+let pizzaTopping = "pineapple"
+
+switch(pizzaTopping){
+    case "vegetables":
+        case "extra mozzarella":
+            console.log("These are important ingredients for my pizza!")
+            break
+            case "pineapple":
+                case "ham":
+                    console.log (`Pineapple? Blasphemy! ${pizzaTopping} should not be on pizza!`)
+                    break
+                    default:
+                        console.log ("Go on then, I'll have a slice...")
+}
+
+// Activity 5
+
+let password = "password123"
+let len = password.length
+if (password.len <8){
+console.log("The password is too short..")
+}
+else{
+    console.log(password)
+}
+
+// Activity 6
+
+let num = Math.floor(Math.random()*100)
+
+if (num % 3 == 0){
+    console.log("fizz")
+}
+if (num % 5 == 0){
+    console.log("buzz")
+}
+if (num % 3 == 0 && num % 5 == 0){
+    console.log("fizz buzz")
+}
+else{
+    console.log(num)
+}
+
+// Activity 7
+
+time = Math.floor(Math.random()*25)
+console.log(time, "this is the time")
+
+if (time >=7 && time <=9){
+    console.log("I'm commuting to work")
+}
+else if (time >10 && time <=17){
+    console.log("I'm at work")
+}
+else if (time >18 && time <=19){
+    console.log("I'm commuting home")
+}
+else{
+    console.log("I'm at home")
+}
+
+// Activity 8
+
+let text = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
+
+const newText = text.split("")
+console.log(newText)
+// const newText1 = newText.reverse()
+// console.log(newText1)
+let vowel = ["a" || "e" || "i" || "o" || "u"]
+const result = newText.indexOf(vowel)
+console.log(result, "This is the position")
+
+// Activity 9
+let word = "Ganster"
+let lowerWord = word.toLowerCase()
+   let firstLetter = lowerWord[0]
+   
+   let lastLetter = lowerWord[lowerWord.length - 1]
+
+   if(firstLetter == lastLetter){
+    console.log(true)
+
+   }
+   else{
+    console.log(false)
+   }
+
+
+//   Activity 10
+
+const num1 = Math.floor(Math.random()*100)
+const num2 = Math.floor(Math.random()*100)
+let totalSum = (num1 + num2)
+let multiplyNum = (num1 * num2)
+
+if(totalSum % 2 == 0){
+    console.log(totalSum)
+}
+else{
+    console.log(multiplyNum)
+}
+
+// Activity 11
+
+const num = Math.floor(Math.random() * 1000);
+let numToString = num.toString();
+let reversedNum = numToString.split("").reverse().join("");
+
+if (num == reversedNum) {
+  console.log(`${num} is a palindrome.`);
+} else {
+  console.log(`${num} is not a palindrome.`);
+}
+
+
+// Functions
+
+// Activity 1/2
+
+const sayHello = (myName, drink) => {
+    console.log(`Hi there I am ${myName} how are you? Would you like a ${drink}?`)
+}
+sayHello("Sophie", "Cup of Tea")
+
+// Object Orientated Programming

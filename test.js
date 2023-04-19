@@ -20,3 +20,4 @@ inventory(412345, "baked goods", 65)
 let text = "Hello world, welcome to the universe."
 let result = text.indexOf("welcome")
 console.log(result, "this is result")
+
